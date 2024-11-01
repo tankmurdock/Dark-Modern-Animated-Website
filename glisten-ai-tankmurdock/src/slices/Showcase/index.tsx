@@ -26,7 +26,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className="relative"
     >
-      <div className="glow-absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
+      <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
 
       <PrismicRichText
         field={slice.primary.heading}
@@ -55,6 +55,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
             {slice.primary.button_text || "Learn More"}
           </ButtonLink>
         </div>
+
         <PrismicNextImage
           field={slice.primary.image}
           className={clsx(
@@ -63,6 +64,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
               ? "lg:order-1 lg:translate-x-[15%]"
               : "lg:-order-1 lg:translate-x-[-15%]",
           )}
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
     </Bounded>
