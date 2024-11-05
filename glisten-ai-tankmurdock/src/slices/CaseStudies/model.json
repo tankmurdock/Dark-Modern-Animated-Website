@@ -33,7 +33,7 @@
         "case_studies_repeat": {
           "type": "Group",
           "config": {
-            "label": "Case Studies Repeat",
+            "label": "Case Studies",
             "repeat": true,
             "fields": {
               "case_study": {

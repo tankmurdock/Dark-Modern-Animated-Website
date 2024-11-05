@@ -396,11 +396,11 @@ type BentoSliceVariation = BentoSliceDefault;
 export type BentoSlice = prismic.SharedSlice<"bento", BentoSliceVariation>;
 
 /**
- * Item in *CaseStudies → Default → Primary → Case Studies Repeat*
+ * Item in *CaseStudies → Default → Primary → Case Studies*
  */
 export interface CaseStudiesSliceDefaultPrimaryCaseStudiesRepeatItem {
   /**
-   * Case Study field in *CaseStudies → Default → Primary → Case Studies Repeat*
+   * Case Study field in *CaseStudies → Default → Primary → Case Studies*
    *
    * - **Field Type**: Content Relationship
    * - **Placeholder**: *None*
@@ -435,7 +435,7 @@ export interface CaseStudiesSliceDefaultPrimary {
   body: prismic.RichTextField;
 
   /**
-   * Case Studies Repeat field in *CaseStudies → Default → Primary*
+   * Case Studies field in *CaseStudies → Default → Primary*
    *
    * - **Field Type**: Group
    * - **Placeholder**: *None*
